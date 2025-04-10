@@ -16,6 +16,6 @@ WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
 # Window title (caption)
 # Update the window title as needed
-TITLE = "My Pygame Project"
+TITLE = " Simple Button"
 # Frame rate (frames per second)
 FPS = 60
