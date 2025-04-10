@@ -60,13 +60,13 @@ def main():
 
       # -- If Collid With Button -- #
       if button.collidepoint(mouse_x, mouse_y):
-         button_color = (30, 120, 220)
+         button_color = config.RED
       else: 
-         button_color = (240, 50, 40)
+         button_color = (240, 60, 50)
 
-         pygame.draw.rect(screen, button_color, button)
+      pygame.draw.rect(screen, button_color, button)
 
-         screen.blit(surf, surf_rect)
+      screen.blit(surf, surf_rect)
 
 
       pygame.display.flip()
