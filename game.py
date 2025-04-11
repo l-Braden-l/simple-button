@@ -34,6 +34,14 @@ def main():
     screen = init_game()
     clock = pygame.time.Clock()
 
+    # -- Set Position Of Graphic -- #
+    background_position = [0,0]
+
+
+    # -- Load Backgrond -- # 
+    background_image = pygame.image.load("C:\move-spaceship-images\saturn_family1.jpg").convert()
+
+
     # -- Fonts -- #
     font = pygame.font.SysFont('Ariel', 35, bold=True)
     quit_text = font.render('Quit', True, config.BLACK)
@@ -90,7 +98,8 @@ def main():
             screen.blit(quit_text, surf_rect)
             
         else: 
-           screen.blit(welcome_text, surface_welcome)
+           screen.blit(welcome_text, surface_welcome) # If y-cord of Button's are anything other then negative
+           screen.blit(background_image, background_position)
         pygame.display.flip()
         clock.tick(config.FPS)
 
